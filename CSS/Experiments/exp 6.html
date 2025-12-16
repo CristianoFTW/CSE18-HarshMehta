@@ -1,117 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>ShopEasy</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f6fb;
-      margin: 0;
-    }
-    .main-container {
-      margin: 35px auto;
-      padding: 18px;
-      border: 2px solid #222;
-      width: 80%;
-      background: #f4f6fb;
-    }
-    .shop-header {
-      background: #262626;
-      color: #fff;
-      padding: 14px 0;
-      text-align: center;
-      font-size: 26px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      border-radius: 3px 3px 0 0;
-    }
-    .shop-card-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 35px 0;
-    }
-    .shop-card {
-      background: #fff;
-      border-radius: 7px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-      width: 300px;
-      padding: 15px;
-      text-align: left;
-    }
-    .shop-card img {
-      width: 100%;
-      height: 155px;
-      object-fit: contain;
-      margin-bottom: 8px;
-      background: #eee;
-      border-radius: 4px;
-    }
-    .product-title {
-      font-weight: bold;
-      font-size: 16px;
-      margin-bottom: 2px;
-    }
-    .product-desc {
-      font-size: 13px;
-      color: #555;
-      margin-bottom: 6px;
-    }
-    .price-section {
-      display: flex;
-      align-items: baseline;
-      gap: 8px;
-      margin-bottom: 8px;
-    }
-    .product-price {
-      color: #2196f3;
-      font-weight: bold;
-      font-size: 16px;
-    }
-    .product-old-price {
-      color: #999;
-      font-size: 13px;
-      text-decoration: line-through;
-    }
-    .add-cart-btn {
-      display: block;
-      background: #2196f3;
-      color: #fff;
-      text-align: center;
-      padding: 8px 0;
-      border: none;
-      border-radius: 3px;
-      font-size: 15px;
-      cursor: pointer;
-      margin: 0 auto;
-      width: 98%;
-      margin-top: 7px;
-    }
-    .add-cart-btn:hover {
-      background: #1565c0;
-    }
-  </style>
-</head>
-<body>
-  <div class="main-container">
-    <div class="shop-header">
-      ShopEasy
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My E-commerce Store</title>
+
+    <style>
+      body {
+        background-color: rgb(163, 160, 160);
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        width: 260px;
+        background: white;
+        border: 3px solid rgb(40, 38, 38);
+        border-radius: 10px;
+        margin: 40px auto;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .product-img {
+        width: 180px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .name {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0 5px 0;
+      }
+
+      .theory {
+        color: rgb(70, 70, 70);
+        margin: 5px 15px;
+        font-size: 14px;
+      }
+
+      .price {
+        font-size: 15px;
+        color: red;
+        font-weight: bold;
+        margin: 20px 10px;
+      }
+
+      .btn {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+
+      .btn:hover {
+        background-color: rgb(40, 40, 40);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 style="text-align: center;">My E-commerce Store</h1>
+
+    <div class="container">
+      <img
+        src="https://imgs.search.brave.com/9FR0vvx34inC_YPlcSAEvBSf7V_z7iOCznu0zZky6X8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/amFja2pvbmVzLmlu/L2Nkbi9zaG9wL2Zp/bGVzLzkwMTg5NzUw/MV9nNl9mMzg1ODg1/Zi01OTYxLTQ2YjMt/YjJmZS02NWRjMzE0/YWMzZWEuanBnP3Y9/MTc1NzY2NDE0MCZ3/aWR0aD0xMDgw"
+        class="product-img"
+      />
+
+      <p class="name">Stylish T-Shirt</p>
+      <p class="theory">A comfortable cotton T-shirt perfect for casual wear.</p>
+      <p class="price">PRICE:$499</p>
+
+      <button class="btn">Add to Cart</button>
     </div>
-    <div class="shop-card-container">
-      <div class="shop-card">
-        <img src="Tshirt.jpeg" alt="Classic Cotton T-Shirt">
-        <div class="product-title">Classic Cotton T-Shirt</div>
-        <div class="product-desc">
-          Soft, breathable cotton. Regular fit. Available in multiple colors.
-        </div>
-        <div class="price-section">
-          <span class="product-price">₹799</span>
-          <span class="product-old-price">₹1,199</span>
-        </div>
-        <button class="add-cart-btn">Add to Cart</button>
-      </div>
+
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My E-commerce Store</title>
+
+    <style>
+      body {
+        background-color: rgb(163, 160, 160);
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        width: 260px;
+        background: white;
+        border: 3px solid rgb(40, 38, 38);
+        border-radius: 10px;
+        margin: 40px auto;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .product-img {
+        width: 180px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .name {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0 5px 0;
+      }
+
+      .theory {
+        color: rgb(70, 70, 70);
+        margin: 5px 15px;
+        font-size: 14px;
+      }
+
+      .price {
+        font-size: 15px;
+        color: red;
+        font-weight: bold;
+        margin: 20px 10px;
+      }
+
+      .btn {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+
+      .btn:hover {
+        background-color: rgb(40, 40, 40);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 style="text-align: center;">My E-commerce Store</h1>
+
+    <div class="container">
+      <img
+        src="https://imgs.search.brave.com/9FR0vvx34inC_YPlcSAEvBSf7V_z7iOCznu0zZky6X8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/amFja2pvbmVzLmlu/L2Nkbi9zaG9wL2Zp/bGVzLzkwMTg5NzUw/MV9nNl9mMzg1ODg1/Zi01OTYxLTQ2YjMt/YjJmZS02NWRjMzE0/YWMzZWEuanBnP3Y9/MTc1NzY2NDE0MCZ3/aWR0aD0xMDgw"
+        class="product-img"
+      />
+
+      <p class="name">Stylish T-Shirt</p>
+      <p class="theory">A comfortable cotton T-shirt perfect for casual wear.</p>
+      <p class="price">PRICE:$499</p>
+
+      <button class="btn">Add to Cart</button>
     </div>
-  </div>
-</body>
+
+  </body>
 </html>
